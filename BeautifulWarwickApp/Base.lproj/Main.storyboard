@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -17,37 +18,58 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="WARWICK" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WPj-0o-J2w">
-                                <rect key="frame" x="223" y="129" width="219" height="53"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="32"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Discover " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aKd-F2-I5y">
-                                <rect key="frame" x="240" y="90" width="145" height="53"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="27"/>
-                                <color key="textColor" red="0.64990081204439276" green="1" blue="0.63247479033301879" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="highlightedColor" red="0.66935018155430781" green="0.95147794485092163" blue="0.7663252136784422" alpha="1" colorSpace="calibratedRGB"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="History | Attractions | Dining | Experience" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3hP-9W-bhs">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="castle" translatesAutoresizingMaskIntoConstraints="NO" id="0yB-e3-Y04">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="History | Attractions | Dining | Experience" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3hP-9W-bhs">
                                 <rect key="frame" x="109" y="6" width="503" height="67"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="67" id="2aV-oj-aBd"/>
+                                    <constraint firstAttribute="width" constant="503" id="Ey7-5Q-Xwj"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="23"/>
                                 <color key="textColor" red="0.66935018160000004" green="0.95147794490000004" blue="0.76632521369999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1461071798_90_Compass" translatesAutoresizingMaskIntoConstraints="NO" id="gIS-hx-Mgw">
-                                <rect key="frame" x="146" y="107" width="59" height="60"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Compass" translatesAutoresizingMaskIntoConstraints="NO" id="vOq-6d-k71">
+                                <rect key="frame" x="155" y="110" width="48" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="eFR-Yg-Ih2"/>
+                                    <constraint firstAttribute="width" constant="48" id="fa7-QE-isw"/>
+                                </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="castle" translatesAutoresizingMaskIntoConstraints="NO" id="0yB-e3-Y04">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="mjc-Ij-xc9">
+                                <rect key="frame" x="223" y="97" width="161" height="72"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Discover " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aKd-F2-I5y">
+                                        <rect key="frame" x="0.0" y="0.0" width="122" height="33"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="27"/>
+                                        <color key="textColor" red="0.64990081204439276" green="1" blue="0.63247479033301879" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="highlightedColor" red="0.66935018155430781" green="0.95147794485092163" blue="0.7663252136784422" alpha="1" colorSpace="calibratedRGB"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WARWICK" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WPj-0o-J2w">
+                                        <rect key="frame" x="0.0" y="33" width="161" height="39"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="32"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="0yB-e3-Y04" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Ey9-G5-vv1"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3hP-9W-bhs" secondAttribute="trailing" constant="-32" id="GHv-Z9-k6W"/>
                             <constraint firstAttribute="trailing" secondItem="0yB-e3-Y04" secondAttribute="trailing" id="NJM-za-XPT"/>
+                            <constraint firstItem="vOq-6d-k71" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="135" id="SOc-gT-ljX"/>
+                            <constraint firstItem="vOq-6d-k71" firstAttribute="top" secondItem="3hP-9W-bhs" secondAttribute="bottom" constant="37" id="UM8-CH-Vlg"/>
                             <constraint firstItem="0yB-e3-Y04" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="aqk-xU-JXg"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="vOq-6d-k71" secondAttribute="bottom" constant="444" id="bMh-3J-dh6"/>
+                            <constraint firstItem="3hP-9W-bhs" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="6" id="cHb-FK-Nea"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="0yB-e3-Y04" secondAttribute="bottom" id="fiR-nD-T4o"/>
+                            <constraint firstItem="3hP-9W-bhs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="89" id="m7i-39-tHG"/>
+                            <constraint firstItem="mjc-Ij-xc9" firstAttribute="leading" secondItem="vOq-6d-k71" secondAttribute="trailing" constant="20" id="yMN-Lh-tbV"/>
+                            <constraint firstItem="mjc-Ij-xc9" firstAttribute="top" secondItem="3hP-9W-bhs" secondAttribute="bottom" constant="24" id="zgZ-Ht-rM0"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -57,7 +79,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="1461071798_90_Compass" width="128" height="128"/>
+        <image name="Compass" width="48" height="48"/>
         <image name="castle" width="4175" height="2712"/>
     </resources>
 </document>
