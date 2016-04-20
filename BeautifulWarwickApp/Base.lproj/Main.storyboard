@@ -18,8 +18,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="castle" translatesAutoresizingMaskIntoConstraints="NO" id="0yB-e3-Y04">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="castle" translatesAutoresizingMaskIntoConstraints="NO" id="0yB-e3-Y04">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <variation key="heightClass=compact-widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="400" height="400"/>
+                                </variation>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="History | Attractions | Dining | Experience" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3hP-9W-bhs">
                                 <rect key="frame" x="109" y="6" width="503" height="67"/>
@@ -30,6 +33,13 @@
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="23"/>
                                 <color key="textColor" red="0.66935018160000004" green="0.95147794490000004" blue="0.76632521369999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="heightClass=compact-widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="109" y="-196" width="503" height="67"/>
+                                    <mask key="constraints">
+                                        <exclude reference="2aV-oj-aBd"/>
+                                        <exclude reference="Ey7-5Q-Xwj"/>
+                                    </mask>
+                                </variation>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Compass" translatesAutoresizingMaskIntoConstraints="NO" id="vOq-6d-k71">
                                 <rect key="frame" x="155" y="110" width="48" height="46"/>
@@ -37,6 +47,13 @@
                                     <constraint firstAttribute="height" constant="48" id="eFR-Yg-Ih2"/>
                                     <constraint firstAttribute="width" constant="48" id="fa7-QE-isw"/>
                                 </constraints>
+                                <variation key="heightClass=compact-widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="155" y="-92" width="48" height="48"/>
+                                    <mask key="constraints">
+                                        <exclude reference="eFR-Yg-Ih2"/>
+                                        <exclude reference="fa7-QE-isw"/>
+                                    </mask>
+                                </variation>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="mjc-Ij-xc9">
                                 <rect key="frame" x="223" y="97" width="161" height="72"/>
@@ -54,6 +71,9 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
+                                <variation key="heightClass=compact-widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="223" y="-105" width="161" height="72"/>
+                                </variation>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -71,11 +91,27 @@
                             <constraint firstItem="mjc-Ij-xc9" firstAttribute="leading" secondItem="vOq-6d-k71" secondAttribute="trailing" constant="20" id="yMN-Lh-tbV"/>
                             <constraint firstItem="mjc-Ij-xc9" firstAttribute="top" secondItem="3hP-9W-bhs" secondAttribute="bottom" constant="24" id="zgZ-Ht-rM0"/>
                         </constraints>
+                        <variation key="heightClass=compact-widthClass=compact">
+                            <mask key="constraints">
+                                <exclude reference="Ey9-G5-vv1"/>
+                                <exclude reference="NJM-za-XPT"/>
+                                <exclude reference="aqk-xU-JXg"/>
+                                <exclude reference="GHv-Z9-k6W"/>
+                                <exclude reference="cHb-FK-Nea"/>
+                                <exclude reference="m7i-39-tHG"/>
+                                <exclude reference="SOc-gT-ljX"/>
+                                <exclude reference="UM8-CH-Vlg"/>
+                                <exclude reference="yMN-Lh-tbV"/>
+                                <exclude reference="zgZ-Ht-rM0"/>
+                                <exclude reference="bMh-3J-dh6"/>
+                                <exclude reference="fiR-nD-T4o"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="305" y="363"/>
+            <point key="canvasLocation" x="304.5" y="363"/>
         </scene>
     </scenes>
     <resources>
